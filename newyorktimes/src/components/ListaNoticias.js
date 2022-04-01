@@ -16,6 +16,7 @@ function ListaNoticias({arrayProps}) {
         {arrayProps.map((element , indice) => (
         <div key={indice}>
             <h1>{element.title }</h1>
+            <img src={element.multimedia[2].url} alt="" />
             <p>{element.abstract}</p>
             <p>{element.created_date}</p>
             <p>{element.byline}</p>
