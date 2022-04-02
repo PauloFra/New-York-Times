@@ -1,6 +1,7 @@
 import {useContext , useEffect} from 'react'
 import { AuthContext } from '../context/MainContext'
 import ListaNoticias from '../components/ListaNoticias';
+import Loading from '../components/Loading/Loading';
 function Technology() {
   const {GetNoticias , array,pageLoadign} = useContext(AuthContext);
     
@@ -9,7 +10,7 @@ function Technology() {
     },[])
 
     if(pageLoadign){
-        return(<h1>Loading</h1>)
+        return(<Loading />)
     }
   return (
     <div>

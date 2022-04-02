@@ -1,7 +1,11 @@
 .pageDetails{
-  height:900px;
-  padding:20px;
-  margin-top:30px;
+  height: 50vw;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+
 }
 
 .pageDetailsTitle{
@@ -9,10 +13,11 @@
 }
 
 .pageDetailsDiv{
-  margin-left: 20%;
-  margin-right: 0;
-  border-style: groove;
-  width: 60%;
+ 
+  padding: 10px;
+  width: 900px;
+  font-size: 30px;
+  margin: 0 auto;
   
 }
 
@@ -20,16 +25,16 @@
   border-radius: 5px;
 } 
 
-.pageDetailsImg:hover{
-  border: 1px solid #777;
-} 
 
 .pageDetailsText{
-  text-align: center;
+  text-align: left;
   
 }
 
-
+.pageDetails h2{
+  font-size: 40px;
+  margin: 0;
+}
 /* .pageDetailsData{}
 
 .pageDetailssmallTitle{} */

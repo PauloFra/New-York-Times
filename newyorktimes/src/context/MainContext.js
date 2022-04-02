@@ -1,7 +1,7 @@
 import{createContext , useState , useEffect} from 'react'
 import {useLocation} from 'react-router-dom'
 import api from '../api'
-
+import Loading from '../components/Loading/Loading'
 export const AuthContext = createContext()
 
 function MainContext({children}) {
@@ -18,6 +18,7 @@ function MainContext({children}) {
 
     
    async function GetNoticias(nomeSection){
+        setArray([]);
         try{
             const {data} = await api.get(`${nomeSection}.json?api-key=MtNvPePihFmABWskxQqc0uobSzMoeT1K`);
             setArray(data.results);
@@ -29,7 +30,7 @@ function MainContext({children}) {
     }
     
     if(loading){
-        return (<h1>Loading</h1>)
+        return (<Loading />)
     }
   return (
     <AuthContext.Provider value={{GetNoticias , array, pageLoadign,setArrayEspecifico,arrayEspecifico,setFotos,fotos}}>

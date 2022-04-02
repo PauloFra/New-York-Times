@@ -16,9 +16,11 @@ function PageDetails() {
                 <h2 className='pageDetailsTitle'>{element.title}</h2>
                 <div className='pageDetailsDiv'>
                 <img className='pageDetailsImg' src={fotos.url} alt="" />
-                <p className='pageDetailsText'>{element.abstract}</p>
-                <p className='pageDetailsData' >{moment(element.created_date).format('llll')}</p>
-                <p className='pageDetailssmallTitle'>{element.title}</p>
+                <div className='pageDetailsText'>
+                    <p>{element.abstract}</p>
+                    <p  >{moment(element.created_date).format('llll')}</p>
+                    <p >{element.title}</p>
+                </div>                
                 </div>
             </div>
         ))}

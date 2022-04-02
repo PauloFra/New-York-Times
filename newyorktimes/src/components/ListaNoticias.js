@@ -18,16 +18,17 @@ function ListaNoticias({arrayProps}) {
     return (
     <div className={styles.ListaNoticias}>
         {arrayProps.map((element , indice) => (
-        <div key={indice} >
-            <h1>{element.title }</h1>
+        <div key={indice} className={styles.divMaior}>
             <div className={styles.ListaNoticiasDiv}>
-            <img className={styles.ListaNoticiasImg} src={element.multimedia[2].url} alt="" />
-            <p>{element.abstract}</p>
-            <p>{moment(element.created_date).format('llll')}</p>
-            <p>{element.byline}</p>
+            <div className={styles.contentDel}>
+                <h1>{element.title }</h1>
+                <p>{element.abstract}</p>
+                <p>{moment(element.created_date).format('llll')}</p>
+                <p>{element.byline}</p>
+                <button className={styles.ListaNoticiasButton} onClick={()=>{ verDetalhes(element) }} >See details</button>
             </div>
-            <button className={styles.ListaNoticiasButton} onClick={()=>{ verDetalhes(element) }} >See details</button>
-        </div>))}
+            </div>
+            </div>))}
     </div>
   )
 }
