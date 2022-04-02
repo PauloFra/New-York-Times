@@ -2,6 +2,10 @@ import PageDetails from '../pages/PageDetails'
 import {useNavigate} from 'react-router-dom'
 import {useContext , useEffect} from 'react'
 import { AuthContext } from '../context/MainContext'
+import moment from 'moment'
+import styles from './listanoticia/ListaNoticias.module.css'
+
+
 function ListaNoticias({arrayProps}) {    
     const {setArrayEspecifico , setFotos,fotos} = useContext(AuthContext);
     const navigate = useNavigate();
@@ -12,15 +16,17 @@ function ListaNoticias({arrayProps}) {
         setFotos(arr.multimedia[1]);
     }
     return (
-    <div>
+    <div className={styles.ListaNoticias}>
         {arrayProps.map((element , indice) => (
-        <div key={indice}>
+        <div key={indice} >
             <h1>{element.title }</h1>
-            <img src={element.multimedia[2].url} alt="" />
+            <div className={styles.ListaNoticiasDiv}>
+            <img className={styles.ListaNoticiasImg} src={element.multimedia[2].url} alt="" />
             <p>{element.abstract}</p>
-            <p>{element.created_date}</p>
+            <p>{moment(element.created_date).format('llll')}</p>
             <p>{element.byline}</p>
-            <button onClick={()=>{ verDetalhes(element) }} >See details</button>
+            </div>
+            <button className={styles.ListaNoticiasButton} onClick={()=>{ verDetalhes(element) }} >See details</button>
         </div>))}
     </div>
   )

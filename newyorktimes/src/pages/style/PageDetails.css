@@ -1,0 +1,41 @@
+.pageDetails{
+  height:900px;
+  padding:20px;
+  margin-top:30px;
+}
+
+.pageDetailsTitle{
+ text-align: center;
+}
+
+.pageDetailsDiv{
+  margin-left: 20%;
+  margin-right: 0;
+  border-style: groove;
+  width: 60%;
+  
+}
+
+.pageDetailsImg{
+  border-radius: 5px;
+} 
+
+.pageDetailsImg:hover{
+  border: 1px solid #777;
+} 
+
+.pageDetailsText{
+  text-align: center;
+  
+}
+
+
+/* .pageDetailsData{}
+
+.pageDetailssmallTitle{} */
+
+
+
+
+
+

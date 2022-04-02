@@ -1,0 +1,47 @@
+.ListaNoticias{
+  padding:20px;
+  margin-top:30px;
+}
+
+.ListaNoticiasTitle{
+ text-align: center;
+}
+
+.ListaNoticiasDiv{
+  margin-left: 20%;
+  margin-right: 0;
+  border-style: groove;
+  width: 60%;
+  
+}
+
+.ListaNoticiasImg{
+  border-radius: 5px;
+  width: 15%;
+  text-align: right;
+} 
+
+.ListaNoticiasImg:hover{
+  border: 1px solid #777;
+} 
+
+.ListaNoticiasText{
+  text-align: center;
+  
+}
+
+
+/* .ListaNoticiasData{}
+
+.ListaNoticiassmallTitle{} */
+
+.ListaNoticiasButton{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.ListaNoticiasButton:hover {
+  background-color: #555555;
+  color: white;
+}

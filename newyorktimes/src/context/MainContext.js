@@ -16,6 +16,7 @@ function MainContext({children}) {
         setLoading(false)
     },[])
 
+    
    async function GetNoticias(nomeSection){
         try{
             const {data} = await api.get(`${nomeSection}.json?api-key=MtNvPePihFmABWskxQqc0uobSzMoeT1K`);
