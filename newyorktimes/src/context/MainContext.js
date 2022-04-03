@@ -26,6 +26,7 @@ function MainContext({children}) {
             setPageLoadign(false);
         }catch(erro){
             console.log(erro)
+            alert('Ops erro de muitas requisições')
         }
     }
     

@@ -21,7 +21,8 @@ function App() {
   <MainContext>
     <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        {/* <Route path='*' element={<NotFound />} /> */}
+        <Route exact path='/' element={<Home />} />
         <Route path='/technology' element={<Technology />} />
         <Route path='/politics' element={<Politics />} />
         <Route path='/world' element={<World />} />
