@@ -39,8 +39,7 @@
     background-color: white;
     color: white;
     background-color: #555555;
-    padding: 4px;
-    border-radius: 9px;
+    padding: 6px;
     font-size: 20px;
     border: 1px solid #555555;
     transition: 1s;
@@ -50,8 +49,7 @@
   background-color: white;
   color: white;
   background-color: rgb(152, 149, 149);
-  padding: 4px;
-  border-radius: 9px;
+  padding: 6px;
   font-size: 20px;
   border: 1px solid #555555;
   transition: 1s;

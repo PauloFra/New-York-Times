@@ -17,6 +17,7 @@ function Politics() {
   }else{
   return (
     <div>
+         <h2>News</h2>
         <ListaNoticias arrayProps={array}/>
     </div>
   )

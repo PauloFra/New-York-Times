@@ -10,8 +10,6 @@ import './style/PageDetails.css'
 
 function PageDetails() {
     const {arrayEspecifico , fotos ,setFotos,pageLoadign,pageError} = useContext(AuthContext);
-    console.log(fotos)
-
     if(pageLoadign){
         return(<Loading />)
     }else if (pageError){

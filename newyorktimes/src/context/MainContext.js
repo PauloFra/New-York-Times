@@ -27,7 +27,6 @@ function MainContext({children}) {
         try{
             const {data} = await api.get(`${nomeSection}.json?api-key=MtNvPePihFmABWskxQqc0uobSzMoeT1K`);
             setArray(data.results);
-            console.log(data.results);
             setPageLoadign(false);
         }catch(erro){
             <Error/>

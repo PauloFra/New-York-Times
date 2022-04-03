@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <>
     <nav className={styles.navBar}>
-        <Link to={'/'} className={styles.buttonsNav}>Home </Link>
+        <Link to={'/'} refresh="true" className={styles.buttonsNav}>Home </Link>
         <Link to={'/technology'} className={styles.buttonsNav}> Technology </Link>
         <Link to={'/politics'} className={styles.buttonsNav}> Politics </Link>
         <Link to={'/world'} className={styles.buttonsNav}> World </Link>

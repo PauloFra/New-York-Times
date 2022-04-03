@@ -9,7 +9,9 @@ function Home() {
     
     useEffect(()=>{
         GetNoticias('home')
+       
     },[])
+    
 
     if(pageLoadign){
         return(<Loading />)
@@ -18,7 +20,7 @@ function Home() {
     }else{
   return (
     <div>
-     
+       <h2>News</h2>
         <ListaNoticias arrayProps={array}/>
     </div>
   )
