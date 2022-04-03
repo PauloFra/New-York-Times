@@ -5,6 +5,7 @@ import {
   Route,
   BrowserRouter 
 } from 'react-router-dom';
+import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Technology from './pages/Technology';
 import Politics from './pages/Politics';
@@ -21,7 +22,7 @@ function App() {
   <MainContext>
     <Header />
       <Routes>
-        {/* <Route path='*' element={<NotFound />} /> */}
+        <Route path='*' element={<NotFound />} />
         <Route exact path='/' element={<Home />} />
         <Route path='/technology' element={<Technology />} />
         <Route path='/politics' element={<Politics />} />
