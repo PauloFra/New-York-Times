@@ -15,7 +15,8 @@
   width: 100%;
   margin: 0 auto 50px auto;  
   text-align: center;
-  
+  background-color: rgb(239, 239, 239);
+  font-size: 23px;
 }
 
 .divMaior{
@@ -38,26 +39,27 @@
 .ListaNoticiasButton{
     background-color: white;
     color: white;
-    background-color: #555555;
+    background-color: rgba(0, 0, 0, 0.71);
     padding: 6px;
     font-size: 20px;
-    border: 1px solid #555555;
+    border: 1px solid white;
     transition: 1s;
     margin-bottom: 10px;
 }
 .ListaNoticiasButton:hover {
   background-color: white;
   color: white;
-  background-color: rgb(152, 149, 149);
+  background-color: transparent;
+  color: black;
   padding: 6px;
   font-size: 20px;
-  border: 1px solid #555555;
+  border: 1px solid black;
   transition: 1s;
   margin-bottom: 10px;
   
 }
 .contentDel{
-  width: 500px;
+  width: 700px;
   display: grid;
   margin: 0 auto;
 }

@@ -5,22 +5,24 @@
   padding: 50px 0;
   border-left: 1px solid black;
   border-right: 1px solid black;
-
+  background-color: white;
 }
 
 .pageDetailsTitle{
  text-align: center;
 }
-
+/*  */
 .pageDetailsDiv{
- 
+  
   padding: 10px;
   width: 900px;
   font-size: 30px;
   margin: 0 auto;
   
 }
-
+.biggerDiv{
+  background-color: rgb(239, 239, 239);
+}
 .pageDetailsImg{
   border-radius: 5px;
   margin: 50px auto;

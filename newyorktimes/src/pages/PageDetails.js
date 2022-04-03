@@ -16,7 +16,7 @@ function PageDetails() {
       return(<Error/>)
     }else{
     return (
-    <div>
+    <div className='biggerDiv'>
         {[arrayEspecifico].map((element , indice) => (
             <div key={indice} className='pageDetails'>
                 <h2 className='pageDetailsTitle'>{element.title}</h2>
