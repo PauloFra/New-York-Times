@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import {useContext , useEffect,useState} from 'react';
+import {useContext} from 'react';
 
 import { AuthContext } from '../context/MainContext';
 import Loading from '../components/Loading/Loading';
@@ -9,7 +9,7 @@ import Error from '../components/error/Error';
 import './style/PageDetails.css'
 
 function PageDetails() {
-    const {arrayEspecifico , fotos ,setFotos,pageLoadign,pageError} = useContext(AuthContext);
+    const {arrayEspecifico , fotos , pageLoadign,pageError} = useContext(AuthContext);
     if(pageLoadign){
         return(<Loading />)
     }else if (pageError){

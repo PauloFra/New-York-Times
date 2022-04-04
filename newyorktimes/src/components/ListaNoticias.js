@@ -20,15 +20,31 @@ function ListaNoticias({arrayProps}) {
         {arrayProps.map((element , indice) => (
         <div key={indice} className={styles.divMaior}>
             <div className={styles.ListaNoticiasDiv}>
+            
+           
             <div className={styles.contentDel}>
-                <h1>{element.title }</h1>
+            <h1>{element.title }</h1>
                 <p>{element.abstract}</p>
                 <p>{moment(element.created_date).format('llll')}</p>
                 <p>{element.byline}</p>
                 <button className={styles.ListaNoticiasButton} onClick={()=>{ verDetalhes(element) }} >See details</button>
-            </div>
+             </div>
+             {element.multimedia === null
+             ?
+             <div className={styles.divImg}> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJJzfdzr6LkQe7oKUJKtQnIp5i9aEo9BfjmdgpUJmizgxWR57cfw1icxnVEw4Sur8vROU&usqp=CAU" alt="" />
+             </div>  
+             :<>
+              <div className={styles.divImg}> 
+                    <img src={element.multimedia[1].url} alt="" />
+                </div>  
+             </>
+                
+            } 
+            
             </div>
             </div>))}
+            
     </div>
   )
 }
